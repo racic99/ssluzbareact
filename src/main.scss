@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand' !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "altdark": #272727,
+    "lightdark": #494e53,
+    "altorange": #ffa800,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
